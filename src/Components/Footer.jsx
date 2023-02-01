@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import envelopeIcon from "../images/socials/envelope.svg";
-import gitHubIcon from "../images/socials/github.svg";
-import linkedInIcon from "../images/socials/linkedin.svg";
+import envelopeIcon from '../images/socials/envelope.svg';
+import gitHubIcon from '../images/socials/github.svg';
+import linkedInIcon from '../images/socials/linkedin.svg';
 
 const Footer = (props) => {
   const { email, gitHub, linkedIn, name, primaryColor } = props;
@@ -12,19 +12,19 @@ const Footer = (props) => {
     <div
       id="contact"
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '2.5rem',
+        padding: '5rem 0 3rem',
+        backgroundColor: primaryColor
       }}
     >
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "2.5rem",
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '2.5rem'
         }}
       >
         <a href={`mailto:${email}`}>
@@ -43,7 +43,7 @@ const Footer = (props) => {
           <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
         </a>
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className="small" style={{ marginTop: 0, color: 'white' }}>
         Created by {name}
       </p>
     </div>
@@ -51,20 +51,15 @@ const Footer = (props) => {
 };
 
 Footer.defaultProps = {
-  name: "",
+  name: ''
 };
 
 Footer.propTypes = {
-  devDotTo: PropTypes.string,
   email: PropTypes.string,
   gitHub: PropTypes.string,
-  instagram: PropTypes.string,
   linkedIn: PropTypes.string,
-  medium: PropTypes.string,
   name: PropTypes.string.isRequired,
-  primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
-  youTube: PropTypes.string,
+  primaryColor: PropTypes.string
 };
 
 export default Footer;

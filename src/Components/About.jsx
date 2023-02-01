@@ -17,11 +17,6 @@ const imageAltText = 'purple and blue abstract background';
 const description =
   'I am a highly driven Full-Stack Software Engineer with a passion for learning and solving complex problems. My expertise in debugging, attention to detail, and flexible thought process allows me to swiftly ramp up on new technologies and find creative solutions to meet project goals. My background in psychology and experience in recruiting has honed my interpersonal skills, allowing me to effectively collaborate with teams and stakeholders at all levels.';
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
-//  */
-
 const skillsList = [
   'JavaScript/HMTL/CSS',
   'Expressjs',
@@ -46,14 +41,6 @@ const skillsList = [
   'Data Analysis',
   'Containerization'
 ];
-
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-// const detailOrQuote =
-//   '';
 
 const About = () => {
   return (
