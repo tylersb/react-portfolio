@@ -37,16 +37,17 @@ const projectList = [
     url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Workout Tracker",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A workout tracking app that allows a user to track their workouts over time and save workouts into a database to be viewed later. There is additional functionality to search for example workouts based on muscle that provide instructions to follow",
+    url: "https://github.com/tylersb/workout-tracker",
+    live: "https://t-workout-tracker.herokuapp.com/",
   },
   {
-    title: "My Resume Site",
+    title: "Workout Tracker refactored with React",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "A refactor of my previous workout tracker app in React to take advantage of the flexibility it offers and to practice approaching a previous project with a react mindset.",
+    url: "https://github.com/tylersb/react-workout-tracker",
   },
   {
     title: "GitHub Codespaces and github.dev",
@@ -75,6 +76,11 @@ const Portfolio = () => {
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
+              {project.live && (
+                <a href={project.live} target="_blank" rel="noopener noreferrer">
+                  <p className="small">Live Site</p>
+                </a>
+              )}
             </div>
           ))}
         </div>
