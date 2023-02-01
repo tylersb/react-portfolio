@@ -1,14 +1,4 @@
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */
-
-import React from "react";
+import React from 'react';
 
 /**
  * Desk image
@@ -19,53 +9,43 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from '../images/design-desk.jpeg';
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = 'desktop with books and laptop';
 
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: 'Workout Tracker (Node, Express, Postgres)',
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      'A workout tracking app that allows a user to track their workouts over time and save workouts into a database to be viewed later. There is additional functionality to search for example workouts based on muscle that provide instructions to follow',
+    url: 'https://github.com/tylersb/workout-tracker',
+    live: 'https://t-workout-tracker.herokuapp.com/'
   },
   {
-    title: "Workout Tracker",
+    title: 'Workout Tracker Refactored into a SPA (MERN)',
     description:
-      "A workout tracking app that allows a user to track their workouts over time and save workouts into a database to be viewed later. There is additional functionality to search for example workouts based on muscle that provide instructions to follow",
-    url: "https://github.com/tylersb/workout-tracker",
-    live: "https://t-workout-tracker.herokuapp.com/",
+      'A refactor of my previous workout tracker app in React to take advantage of the flexibility it offers and to practice approaching a previous project with a react mindset.',
+    url: 'https://github.com/tylersb/react-workout-tracker',
+    backend: 'https://github.com/tylersb/react-workout-tracker-server'
   },
   {
-    title: "Workout Tracker refactored with React",
+    title: 'Food Delivery App (MERN)',
     description:
-      "A refactor of my previous workout tracker app in React to take advantage of the flexibility it offers and to practice approaching a previous project with a react mindset.",
-    url: "https://github.com/tylersb/react-workout-tracker",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-  },
+      'A food delivery app that allows a user to pick from a variety of restaurants and order food to be delivered to their home. The app also allows a user to create an account, view past orders, as well as register new restaurants to be included in the app.',
+    url: 'https://github.com/tylersb/project-3-client',
+    backend: 'https://github.com/tylersb/project-3-server'
+  }
 ];
 
 const Portfolio = () => {
   return (
     <section className="light" id="portfolio">
       <h2>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '3rem' }}>
+        <div style={{ maxWidth: '40%', alignSelf: 'center' }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: '90%', width: '100%', objectFit: 'cover', animation: "1s ease-out 0s 1 slideInLeft" }}
             alt={imageAltText}
           />
         </div>
@@ -73,12 +53,17 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: '40px' }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
+              {project.backend && (
+                <a href={project.backend} target="_blank" rel="noopener noreferrer">
+                  <h5 className="small">REST API Server</h5>
+                </a>
+              )}
               {project.live && (
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  <p className="small">Live Site</p>
+                  <h5 className="small">Live Site</h5>
                 </a>
               )}
             </div>

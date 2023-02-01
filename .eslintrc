@@ -26,6 +26,7 @@
   },
   "rules": {
     "prettier/prettier": ["warn", { "endOfLine": "auto" }],
-    "react/prop-types": "warn"
+    "react/prop-types": "warn",
+    "trailling-comma": "none"
   }
 }
