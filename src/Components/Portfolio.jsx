@@ -33,7 +33,8 @@ const projectList = [
     description:
       'A food delivery app that allows a user to pick from a variety of restaurants and order food to be delivered to their home. The app also allows a user to create an account, view past orders, as well as register new restaurants to be included in the app.',
     url: 'https://github.com/tylersb/project-3-client',
-    backend: 'https://github.com/tylersb/project-3-server'
+    backend: 'https://github.com/tylersb/project-3-server',
+    live: 'https://nimble-chimera-2ff671.netlify.app/'
   }
 ];
 
