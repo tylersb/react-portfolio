@@ -28609,7 +28609,8 @@ const projectList = [
         title: "Food Delivery App (MERN)",
         description: "A food delivery app that allows a user to pick from a variety of restaurants and order food to be delivered to their home. The app also allows a user to create an account, view past orders, as well as register new restaurants to be included in the app.",
         url: "https://github.com/tylersb/project-3-client",
-        backend: "https://github.com/tylersb/project-3-server"
+        backend: "https://github.com/tylersb/project-3-server",
+        live: "https://nimble-chimera-2ff671.netlify.app/"
     }
 ];
 const Portfolio = ()=>{
@@ -28621,7 +28622,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 43,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28647,12 +28648,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 46,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28671,12 +28672,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 61,
+                                            lineNumber: 62,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 60,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28684,7 +28685,7 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, undefined),
                                     project.backend && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28696,12 +28697,12 @@ const Portfolio = ()=>{
                                             children: "REST API Server"
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 66,
+                                            lineNumber: 67,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 65,
+                                        lineNumber: 66,
                                         columnNumber: 17
                                     }, undefined),
                                     project.live && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28713,35 +28714,35 @@ const Portfolio = ()=>{
                                             children: "Live Site"
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 71,
+                                            lineNumber: 72,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 70,
+                                        lineNumber: 71,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 44,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 5
     }, undefined);
 };
