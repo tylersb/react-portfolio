@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "www.tylerbenbrook.com",
+  "homepage": "http://tylersb.github.io/react-portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'www.tylerbenbrook.com'",
+    "build-gh": "parcel build --public-url 'https://tylersb.github.io/react-portfolio'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
